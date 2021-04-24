@@ -62,7 +62,8 @@
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "build:sw": "node ./src/swBuild.js",
     "start:sw": "http-server ./build -c 0",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "yarn build && netlify deploy --prod"
   },
   "eslintConfig": {
     "extends": "react-app"
